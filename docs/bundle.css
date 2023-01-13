@@ -1,1 +1,334 @@
+/*
+https://github.com/Hanul/sky-css-base
+v0.0.1 | 20210109
+Author: Sim Young Jae
+License: MIT
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*:focus {
+  outline: 0;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+button,
+input {
+  border: none;
+}
+[hidden] {
+  display: none !important;
+}
+[contenteditable] {
+  -webkit-tap-highlight-color: transparent;
+}
+.float-wrapper:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@font-face {
+  font-family: NotoSansKR;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format("woff2"), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format("woff"), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format("otf");
+}
+html,
+body {
+  background-color: #141313;
+  color: #fff;
+}
+body,
+input {
+  font-family: NotoSansKR;
+  color: #fff;
+}
+.message-item {
+  display: flex;
+  gap: 5px;
+  margin: 8px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.message-item > .profile-image {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.message-item > .name {
+  font-weight: bold;
+  color: #6699cc;
+}
+.message-item > .message {
+  color: #dcdcdc;
+}
+.message-item > .upload-image {
+  background-color: #fff;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: -2px;
+}
+.message-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.message-list > .message-item-container {
+  height: 0px;
+  flex-grow: 1;
+  background-color: #252526;
+  overflow-y: scroll;
+}
+.message-list > .message-item-container > .system-message {
+  color: #7289da;
+  margin: 8px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.message-list > .message-form {
+  background-color: #252526;
+  border-top: 1px solid #333;
+}
+.message-list > .message-form > input {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background-color: #252526;
+  color: #dcdcdc;
+  font-family: NotoSansKR;
+  font-size: 15px;
+}
+.user-item {
+  display: flex;
+  gap: 5px;
+  margin: 8px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.user-item > .profile-image {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.user-item > .name {
+  font-weight: bold;
+  color: #6699cc;
+}
+.test-chat-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  font-family: NotoSansKR;
+}
+.test-chat-view > .chat-room {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.test-chat-view > .chat-room > header {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test-chat-view > .chat-room > header > h1 {
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+.test-chat-view > .chat-room > header > .user-list-button {
+  display: none;
+  padding: 10px;
+  font-size: 28px;
+  color: #898787;
+}
+@media only screen and (max-width: 859px) {
+  .test-chat-view > .chat-room > header > .user-list-button {
+    display: block;
+  }
+}
+.test-chat-view > .chat-room > .message-list {
+  flex-grow: 1;
+}
+.test-chat-view > .user-list {
+  width: 200px;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+}
+.test-chat-view > .user-list > .close-button {
+  display: none;
+}
+.test-chat-view > .user-list > .user-container {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 859px) {
+  .test-chat-view > .user-list {
+    display: none;
+  }
+  .test-chat-view > .user-list.show {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    height: 100%;
+  }
+  .test-chat-view > .user-list > .close-button {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    font-size: 28px;
+    color: #898787;
+  }
+}
 

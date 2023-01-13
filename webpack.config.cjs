@@ -40,7 +40,7 @@ module.exports = {
         },
     },
     output: {
-        filename: '[name].js',
+        filename: '[name]-0.0.1.js',
         path: __dirname,
     },
     plugins: [

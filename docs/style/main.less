@@ -1,0 +1,27 @@
+@import "base.less";
+
+@font-face {
+    font-family: NotoSansKR;
+    src        : url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format("woff2"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format("woff"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format("otf");
+}
+
+html,
+body {
+    background-color: #141313;
+    color           : #fff;
+}
+
+body,
+input {
+    font-family: NotoSansKR;
+    color      : #fff;
+}
+
+@import "components/message-item.less";
+@import "components/message-list.less";
+@import "components/user-item.less";
+@import "components/user-list.less";
+
+@import "view/test-chat.less";

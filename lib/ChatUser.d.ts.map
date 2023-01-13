@@ -1,0 +1,1 @@
+{"version":3,"file":"ChatUser.d.ts","sourceRoot":"","sources":["../src/ChatUser.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,WAAW,QAAQ;IAC7B,UAAU,EAAE,MAAM,CAAC;IACnB,IAAI,EAAE,MAAM,CAAC;IACb,YAAY,EAAE,MAAM,GAAG,SAAS,CAAC;IACjC,GAAG,CAAC,EAAE,MAAM,CAAC;IACb,UAAU,EAAE,MAAM,CAAC;CACtB"}

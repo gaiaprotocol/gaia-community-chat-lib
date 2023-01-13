@@ -4,6 +4,7 @@ const { ProvidePlugin } = require('webpack');
 
 module.exports = {
     entry: {
+        'gaia-community-chat-lib': './src/main.ts',
         'bundle': './test-src/main.ts',
         __less: './docs/style/main.less',
     },

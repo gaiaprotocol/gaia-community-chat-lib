@@ -2001,19 +2001,19 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-skydapp-browser@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/skydapp-browser/-/skydapp-browser-0.1.1.tgz#039ac79e8f4441b36630a107b4935a26bb499e95"
-  integrity sha512-Q3/6vknPWHT52YHHJ+TNBoQE4bbA+0DWLirceJpm2S6ZBQASnzdBs7Ry1mV9mNGnUf0guU5K/HtyAThoDtyKdg==
+skydapp-browser@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/skydapp-browser/-/skydapp-browser-0.1.2.tgz#5c3b907a734d6ef3dd1c66ad76638e7d394657c2"
+  integrity sha512-YUP8KHqNCvI/d2PN5hQ9WzPJcdq6TnESG2ossm2NXiFktx9lcFRFoFnpDcZTcoqlkL32bAjVSoRCKAva3da8xg==
   dependencies:
     "@types/papaparse" "^5.2.4"
     bowser "^2.11.0"
     papaparse "^5.3.0"
     pixi-spine "3.0.13"
     pixi.js "^6.3.0"
-    skydapp-common "^0.1.0"
+    skydapp-common "^0.1.3"
 
-skydapp-common@^0.1.0, skydapp-common@^0.1.3:
+skydapp-common@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/skydapp-common/-/skydapp-common-0.1.3.tgz#ef894f5769dbb38e615cad462b42e20c8b840fa8"
   integrity sha512-qvHqZnxXPTDEHtJ5jNk/Wt69B3pv1dRRGPlGJDHHBLltnhtiuZxH7XHtnpT/F0Tqam86GM5JGmVOKvdnF7nieQ==
