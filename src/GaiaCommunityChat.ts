@@ -35,6 +35,10 @@ class GaiaCommunityChat extends EventContainer {
         return await this.client.send("community/chat/enter-room", chatRoomId, token);
     }
 
+    public async setUser(chatRoomId: string, token: string): Promise<void> {
+        return await this.client.send("community/chat/set-user", chatRoomId, token);
+    }
+
     public async loadUsers(chatRoomId: string): Promise<ChatUser[]> {
         return await this.client.send("community/chat/users", chatRoomId);
     }
