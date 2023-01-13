@@ -25,6 +25,15 @@ export default class TestChat extends View {
             el(".chat-room",
                 el("header",
                     el("h1", "Test Chat"),
+                    el("a.user-list-button", "Users", {
+                        click: () => {
+                            if (this.userList.checkClass("show") !== true) {
+                                this.userList.addClass("show");
+                            } else {
+                                this.userList.deleteClass("show");
+                            }
+                        },
+                    }),
                 ),
                 this.messageList = new MessageList(this.user, async (message: string) => {
                     await win.GaiaCommunityChat.sendMessage("test", message);

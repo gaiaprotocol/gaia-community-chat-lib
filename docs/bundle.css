@@ -287,8 +287,6 @@ input {
 .test-chat-view > .chat-room > header > .user-list-button {
   display: none;
   padding: 10px;
-  font-size: 28px;
-  color: #898787;
 }
 @media only screen and (max-width: 859px) {
   .test-chat-view > .chat-room > header > .user-list-button {
@@ -327,8 +325,6 @@ input {
     display: block;
     text-align: right;
     padding: 10px;
-    font-size: 28px;
-    color: #898787;
   }
 }
 

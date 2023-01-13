@@ -10,7 +10,7 @@ export default class UserList extends DomNode {
     constructor() {
         super(".user-list");
         this.append(
-            el("a.close-button", el("i.fa-solid.fa-xmark"), { click: () => this.deleteClass("show") }),
+            el("a.close-button", "X", { click: () => this.deleteClass("show") }),
             this.userContainer = el(".user-container"),
         );
     }
