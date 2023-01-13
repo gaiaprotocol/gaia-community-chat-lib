@@ -18,5 +18,8 @@ const result = await fetch(`https://backend.gaiaprotocol.com/community/chat/${ch
 const token = await result.text();
 ```
 
+## Showcase
+https://gaia-community-chat-lib-test.gaiaprotocol.com/
+
 ## License
 © 2023 [Gaia Protocol](https://github.com/gaiaprotocol)
