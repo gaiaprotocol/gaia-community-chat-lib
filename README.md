@@ -1,6 +1,20 @@
 # gaia-community-chat-lib
 가이아 메시징 프로토콜을 사용하여 웹 사이트에 채팅방을 구현할 수 있는 라이브러리입니다. `chatRoomId`와 `secretKey`를 발급받고자 하시는 분들께서는 [Gaia Protocol Contact](https://gaiaprotocol.com/contact) 페이지를 통해 연락을 부탁드립니다.
 
+```ts
+import { GaiaCommunityChat, ChatMessage, ChatUser } from "gaia-community-chat-lib";
+
+GaiaCommunityChat.connect();
+```
+
+## Installation
+```
+$ yarn add gaia-community-chat-lib
+```
+```
+$ npm install gaia-community-chat-lib
+```
+
 ## 토큰 취득 예시
 서버사이드에서 실행
 ```ts
